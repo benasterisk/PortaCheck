@@ -470,7 +470,7 @@ export default function RunPage({ phone }) {
       {/* Commentaire + suggestions */}
       <div>
         <label className="text-xs text-slate-400 flex items-center gap-2">
-          Commentaire (facultatif) <span className="kbd">C</span> pour y accéder — ajouté horodaté au verdict
+          {t('run.comment_label', { key: 'C' })}
         </label>
         {commentHistory && (
           <div className="mt-1 mb-1 text-xs text-slate-400 bg-panel2 border border-edge rounded p-2 max-h-24 overflow-auto whitespace-pre-wrap">
@@ -481,7 +481,7 @@ export default function RunPage({ phone }) {
           ref={commentRef}
           className="input mt-1"
           list="comment-suggestions"
-          placeholder="Nouvelle note… (choisissez une tuile ou tapez, la liste propose vos saisies passées)"
+          placeholder={t('run.comment_placeholder')}
           value={comment}
           onChange={(e) => setComment(e.target.value)}
         />
@@ -500,7 +500,7 @@ export default function RunPage({ phone }) {
                 type="button"
                 onClick={() => applySuggestion(s.text)}
                 className="text-xs px-2 py-1 rounded border border-edge bg-panel2 hover:border-sky-600 hover:bg-slate-700 text-slate-300"
-                title={`Utilisé ${s.count}×`}
+                title={t('run.used_times', { n: s.count })}
               >
                 {s.text}
               </button>
@@ -517,14 +517,14 @@ export default function RunPage({ phone }) {
 
       {/* Aide raccourcis */}
       <div className="text-xs text-slate-600 flex flex-wrap gap-x-4 gap-y-1 border-t border-edge pt-3">
-        <span><span className="kbd">←</span> <span className="kbd">→</span> Naviguer</span>
-        <span><span className="kbd">Espace</span> Composer</span>
-        <span><span className="kbd">O</span> OK</span>
-        <span><span className="kbd">N</span> NOK</span>
-        <span><span className="kbd">S</span> Passer</span>
-        <span><span className="kbd">R</span> Recomposer</span>
-        <span><span className="kbd">C</span> Commentaire</span>
-        <span><span className="kbd">Échap</span> Raccrocher</span>
+        <span><span className="kbd">←</span> <span className="kbd">→</span> {t('run.help.navigate')}</span>
+        <span><span className="kbd">Space</span> {t('run.help.dial')}</span>
+        <span><span className="kbd">O</span> {t('run.ok')}</span>
+        <span><span className="kbd">N</span> {t('run.nok')}</span>
+        <span><span className="kbd">S</span> {t('run.skip')}</span>
+        <span><span className="kbd">R</span> {t('run.redial')}</span>
+        <span><span className="kbd">C</span> {t('run.help.comment')}</span>
+        <span><span className="kbd">Esc</span> {t('run.help.hangup')}</span>
       </div>
     </div>
   )
