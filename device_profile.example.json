@@ -1,0 +1,28 @@
+{
+  "serial": "XXXXXXXXXXXX",
+  "model": "SM-A256B",
+  "product": "a25xeea",
+  "sims": [
+    {
+      "slot": 1,
+      "subId": 1,
+      "operator": "Orange",
+      "carrier_name": "Orange F",
+      "label": "Pro",
+      "mcc_mnc": "20801",
+      "service_state": "IN_SERVICE",
+      "voice_call_available": true
+    }
+  ],
+  "mono_sim": true,
+  "empty_slots": [0],
+  "sim_switch_method": "A",
+  "dial_format": "e164",
+  "dial_format_alternatives": ["national"],
+  "call_intent_locked_screen": true,
+  "keep_screen_on_during_run": true,
+  "secure_keyguard": true,
+  "requires_initial_manual_unlock": true,
+  "adb_path": "C:\\platform-tools\\adb.exe",
+  "notes": "Exemple de profil produit par la Phase 0. Remplacez 'serial' par le serial réel de votre appareil (adb devices) et ajustez les SIM. Le vrai device_profile.json est ignoré par git (spécifique à la machine)."
+}

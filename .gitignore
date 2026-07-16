@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+
+# Données locales (jamais committées)
+portacheck.db
+portacheck.db-*
+logs/*.log
+
+# Profil appareil : spécifique à la machine (serial, SIM). Voir device_profile.example.json
+device_profile.json
+
+# Packaging PyInstaller (artefacts de build, trop lourds pour git)
+build/
+dist/
+platform-tools/
+*.exe
+
+# OS / éditeur
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

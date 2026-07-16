@@ -1,0 +1,5 @@
+﻿0.6 Test methode A (mono-SIM)
+AVANT: 1
+PUT: 1
+APRES: 1
+Conclusion: la commande settings put/get global multi_sim_voice_call fonctionne (relecture conforme).

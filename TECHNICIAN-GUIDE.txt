@@ -1,0 +1,45 @@
+========================================================
+  PortaCheck — Quick start guide (technician)
+========================================================
+
+NO INSTALLATION IS REQUIRED.
+Everything (the program and the ADB driver) is bundled inside PortaCheck.exe.
+
+--------------------------------------------------------
+1. PREPARE THE PHONE (once)
+--------------------------------------------------------
+  a) On the Android phone, enable "Developer options"
+     (Settings > About phone > tap "Build number" 7 times).
+  b) In Developer options, turn on "USB debugging".
+  c) Connect the phone to the PC with a USB cable.
+  d) On the phone, an "Allow USB debugging?" dialog appears:
+     check "Always allow from this computer", then tap "Allow".
+
+--------------------------------------------------------
+2. RUN THE APPLICATION
+--------------------------------------------------------
+  - Double-click  PortaCheck.exe
+  - A black console window opens (the server). LEAVE IT OPEN.
+  - Your browser opens automatically on the application.
+    (If it does not: open http://localhost:8765 in your browser.)
+
+  To STOP: close the black console window.
+
+--------------------------------------------------------
+3. USE IT
+--------------------------------------------------------
+  - Pick your language at the top right if needed (8 languages available).
+  - Create a campaign, import your number list (Excel/CSV), start a pass
+    and enter verdicts from the keyboard
+    (Space = dial, O = OK, N = NOK, S = skip, arrow keys = navigate).
+  - A full user guide is available inside the app (the "Help" menu).
+
+--------------------------------------------------------
+TROUBLESHOOTING
+--------------------------------------------------------
+  - "Phone disconnected": check the USB cable and USB debugging.
+    Unplug / replug if needed.
+  - Data files (database, logs) are created next to PortaCheck.exe.
+    Do not delete them during a campaign.
+  - The application is 100% local: no data is sent to the Internet.
+========================================================

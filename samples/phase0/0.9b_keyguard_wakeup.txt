@@ -1,0 +1,4 @@
+﻿Complement 0.9 - Keyguard et WAKEUP
+Keyguard(window): mKeyguardOccluded=false mKeyguardOccludedChanged=false mPendingKeyguardOccluded=false | KeyguardServiceDelegate | deviceHasKeyguard=true | KeyguardStateMonitor
+Keyguard(keyguard): 
+Apres KEYCODE_WAKEUP: mWakefulness=Awake

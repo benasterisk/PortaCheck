@@ -1,0 +1,3 @@
+﻿List of devices attached
+EMULATOR30X0            device product:a25xeea model:SM_A256B device:a25x transport_id:1
+

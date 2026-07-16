@@ -1,0 +1,8 @@
+﻿0.10 Test format E.164 tel:+33600000000 (ecran deverrouille)
+PENDANT: mCallState=0 | mCallState=2
+APRES ENDCALL: mCallState=0 | mCallState=0
+RESULTAT: OFFHOOK detecte = True
+
+CONCLUSION FORMATS (0.10):
+- national 0600000000 : OK (teste en 0.8)
+- E.164 +33600000000 : OK

@@ -1,0 +1,9 @@
+{
+  "adb_path": "C:\\platform-tools\\adb.exe",
+  "port": 8765,
+  "poll_interval_idle_s": 3,
+  "poll_interval_call_s": 1,
+  "dial_delay_default_s": 2,
+  "dial_delay_min_s": 1,
+  "open_browser_on_start": true
+}

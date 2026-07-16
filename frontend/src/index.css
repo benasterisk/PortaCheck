@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-950 text-slate-200 font-mono antialiased;
+  margin: 0;
+}
+
+/* Thème clair (commutable via .light sur <html>). */
+html.light body {
+  @apply bg-slate-100 text-slate-800;
+}
+
+/* Composants réutilisables (couche @layer pour rester surchargeable). */
+@layer components {
+  .btn {
+    @apply px-3 py-2 rounded border border-edge bg-panel2 text-slate-200
+           hover:bg-slate-700 transition-colors text-sm font-medium
+           disabled:opacity-40 disabled:cursor-not-allowed select-none;
+  }
+  .btn-primary {
+    @apply bg-sky-600 border-sky-500 hover:bg-sky-500 text-white;
+  }
+  .btn-ok {
+    @apply bg-emerald-600 border-emerald-500 hover:bg-emerald-500 text-white;
+  }
+  .btn-nok {
+    @apply bg-rose-600 border-rose-500 hover:bg-rose-500 text-white;
+  }
+  .btn-warn {
+    @apply bg-amber-600 border-amber-500 hover:bg-amber-500 text-white;
+  }
+  .btn-ghost {
+    @apply bg-transparent border-edge hover:bg-panel2;
+  }
+  .card {
+    @apply rounded-lg border border-edge bg-panel p-4;
+  }
+  .input {
+    @apply w-full rounded border border-edge bg-panel2 px-3 py-2 text-slate-200
+           focus:outline-none focus:ring-1 focus:ring-sky-500 placeholder:text-slate-500;
+  }
+  .kbd {
+    @apply inline-flex items-center justify-center min-w-[1.4rem] px-1.5 py-0.5
+           rounded border border-edge bg-slate-800 text-xs text-slate-300;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+}
+
+html.light body .btn { @apply bg-white border-slate-300 text-slate-700 hover:bg-slate-200; }
+html.light body .card { @apply bg-white border-slate-300; }
+html.light body .input { @apply bg-white border-slate-300 text-slate-800; }
